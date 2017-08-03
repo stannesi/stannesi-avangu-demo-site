@@ -1,0 +1,50 @@
+<section class="contact-widget">
+    <ul class="actions" ng-show="!bShowForm">
+        <li><a href="#" class="button" ng-click="fnShowForm()">Contact Me</a></li>
+    </ul>
+    <ul class="icons" ng-show="bShowForm">
+        <li><a href="#" class="fa fa-times pull-right" ng-click="fnHideForm()">Close</a></li>
+    </ul>
+
+    <form method="post" action="#" ng-show="bShowForm">
+        <h2>Contact Me</h2>
+        <div class="field">
+            <input type="text" name="name" id="name" placeholder="Name" />
+        </div>
+        <div class="field">
+            <input type="email" name="email" id="email" placeholder="Email" />
+        </div>
+        <div class="field">
+            <input type="text" name="subject" id="subject" placeholder="Subject" />
+        </div>
+        <!--
+        <div class="field">
+            <div class="select-wrapper">
+                <select name="department" id="department">
+                    <option value="">Department</option>
+                    <option value="sales">Sales</option>
+                    <option value="tech">Tech Support</option>
+                    <option value="null">/dev/null</option>
+                </select>
+            </div>
+        </div>
+-->
+        <div class="field">
+            <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+        </div>
+        <div class="field">
+            <input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
+        </div>
+        <!--
+        <div class="field">
+            <label>But are you a robot?</label>
+            <input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
+            <input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
+        </div>
+        -->
+        <ul class="actions">
+            <li><a href="#" class="button">Send Message</a></li>
+        </ul>
+    </form>
+
+</section>

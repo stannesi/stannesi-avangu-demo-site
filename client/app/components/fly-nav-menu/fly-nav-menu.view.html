@@ -1,0 +1,13 @@
+<nav class="fly-nav-menu">
+    <div class="fly-nav-overlay" ng-class="sMenuItemsClass"></div>
+    <ul class="fly-nav-menu-items" ng-class="sMenuItemsClass">
+        <li ng-repeat="menu in menuItems">
+            <a ui-sref="{{ ::menu.sref }}" ng-click="fnItemClick($event)" >
+                <span class="fa {{ ::menu.icon }} fa-3x"></span>
+            </a>
+        </li>
+    </ul>
+    <a class="fly-nav-menu-btn" ng-class="{ 'rotate' : bBtnClass }" href="#" title="Toggle" ng-click="fnBtnClick()">
+        <span class="fa fa-home"></span>
+    </a>
+</nav>

@@ -1,0 +1,34 @@
+<section class="home">
+    <!-- AVANGU VIDOE PLAYER WIDGET -->    
+    <avangu class="background"
+        source='[{
+            "src": "assets/videos/demo-1.mp4",
+            "type": "video/mp4"
+        }]'
+        mute ="true"
+        autoplay="true"
+        loop="true"
+        native-controls="true"
+        config-url="app/components/avangu/config.json"
+        >
+        <avangu-player type="video"></avangu-player>
+        <avangu-poster ></avangu-poster>
+    </avangu>
+
+        <!-- AVANGU AUDIO PLAYER WIDGET -->    
+    <avangu class="background"
+        source='[{
+            "src": "assets/audios/song-1.mp3",
+            "type": "audio/mp3"
+        }]'
+        mute="false"
+        autoplay="true"
+        loop="true" 
+        native-controls="true"
+        >
+        <avangu-player type="audio"></avangu-player>
+        <avangu-poster ></avangu-poster>
+    </avangu>
+    <!-- PROFILE WIDGET -->
+    <profile-widget></profile-widget>
+</section>

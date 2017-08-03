@@ -1,0 +1,18 @@
+<section class="profile-widget" id="profile-widget">
+    <header>
+        <span class="avatar"><img src="assets/images/profile/avatar-1.jpg" alt=""></span>
+        <h1>{{ info.name }}</h1>
+        <p>{{ info.title }}</p>
+    </header>
+    
+    <contact-widget></contact-widget>
+
+    <footer>
+        <ul class="icons">
+            <li ng-repeat="social in info.social">
+                <a href="{{social.url}}" class="fa fa-{{social.name}}">{{social.name}}</a>
+            </li>
+        </ul>
+
+    </footer>
+</section>
