@@ -14,4 +14,4 @@ node server/server.js
 
 ### Demo site (heroku)
 
-https://stannesi-avangu-demo-site.herokuapp.com/#/home
+https://stannesi-avangu-demo-site.herokuapp.com/
